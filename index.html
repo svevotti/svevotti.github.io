@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Software Engineer</title>
+  <style>
+    :root{--accent:#0ea5a4;--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;color-scheme:dark}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#e6eef6;line-height:1.45}
+    .wrap{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .name{font-size:1.4rem;font-weight:700}
+    .role{color:var(--muted);font-size:0.95rem}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    .hero{margin:28px 0;padding:20px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px}
+    .headline{font-size:1.6rem;font-weight:700}
+    .sub{color:var(--muted);margin-top:8px}
+    .btn{display:inline-block;margin-top:12px;padding:8px 12px;border-radius:8px;background:var(--accent);color:#022; font-weight:600;text-decoration:none}
+    section{margin-top:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    .card{background:var(--card);padding:14px;border-radius:10px}
+    .project-title{font-weight:700;margin-bottom:6px}
+    .tech{color:var(--muted);font-size:0.86rem;margin-bottom:8px}
+    .screenshot{width:100%;height:140px;object-fit:cover;border-radius:8px;background:#06111a}
+    footer{margin-top:28px;color:var(--muted);font-size:0.9rem}
+    @media (max-width:520px){.wrap{margin:18px;padding:16px}.headline{font-size:1.25rem}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="name">Your Name</div>
+        <div class="role">Aspiring Software Engineer — Full‑stack, Python, React</div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="headline">I build production-like web apps and automation tools that solve real problems.</div>
+        <div class="sub">Currently open to internships and junior software engineer roles. Strong in backend systems, APIs, and front-end UX.</div>
+        <a class="btn" href="#contact">Contact / Resume</a>
+      </section>
+
+      <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="project-title">Project One — Task Manager</div>
+            <div class="tech">React · Node.js · PostgreSQL · Docker</div>
+            <img class="screenshot" alt="Project One screenshot" src="projects/task-manager.png">
+            <p>One-line pitch describing problem and value. <a href="https://github.com/yourname/task-manager" style="color:var(--accent)">Code</a> · <a href="#" style="color:var(--accent)">Live</a></p>
+            <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
+              <li>Built REST API with input validation and JWT auth.</li>
+              <li>Deployed with Docker and CI; improved load time by X%.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="project-title">Project Two — Scraper & ETL</div>
+            <div class="tech">Python · BeautifulSoup · Airflow · SQLite</div>
+            <img class="screenshot" alt="Project Two screenshot" src="projects/scraper.png">
+            <p>Automated data pipeline that extracts and normalizes data. <a href="https://github.com/yourname/scraper" style="color:var(--accent)">Code</a></p>
+            <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
+              <li>Modular code with unit tests and logging.</li>
+              <li>Reduced manual data prep time from hours to minutes.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="project-title">Project Three — Mobile Demo</div>
+            <div class="tech">Flutter · Firebase</div>
+            <img class="screenshot" alt="Project Three screenshot" src="projects/mobile.png">
+            <p>Cross-platform prototype for on-the-go note-taking. <a href="https://github.com/yourname/mobile-demo" style="color:var(--accent)">Code</a></p>
+            <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
+              <li>Implemented offline sync and push notifications.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div style="display:flex;gap:18px;flex-wrap:wrap">
+          <div class="card" style="min-width:220px">
+            <strong>Languages</strong>
+            <div class="tech">Python · JavaScript · TypeScript · Dart</div>
+          </div>
+          <div class="card" style="min-width:220px">
+            <strong>Frameworks / Tools</strong>
+            <div class="tech">React · Next.js · Node · Docker · Git · SQL</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+          <p style="margin:0">Email: <a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></p>
+          <p style="margin:6px 0 0">GitHub: <a href="https://github.com/yourname" style="color:var(--accent)">github.com/yourname</a></p>
+          <p style="margin:6px 0 0">LinkedIn: <a href="#" style="color:var(--accent)">linkedin.com/in/yourname</a></p>
+          <p style="margin:10px 0 0"><a href="resume.pdf" class="btn">Download Resume (PDF)</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© Your Name — Built with HTML · CSS</div>
+    </footer>
+  </div>
+</body>
+</html>
