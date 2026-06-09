@@ -31,86 +31,113 @@
     <header>
       <div>
         <div class="name">Sveva Mazzari</div>
-        <div class="role">Aspiring Software Engineer — Full‑stack, Python</div>
+        <div class="role">Aspiring Software Engineer</div>
       </div>
       <nav>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" id="hero">
-        <div class="headline">I build production-like web apps and automation tools that solve real problems.</div>
+        <div class="headline">About me</div>
+        <div class="sub">I'm a junior software developer and 42 Berlin grad with three years of hands-on, project-based training. I enjoy building reliable systems and interactive web apps, love solving technical problems with curiosity and care, and thrive working with friendly, collaborative teams.</div>
         <div class="sub">Currently open to internships and junior software engineer roles. Strong in backend systems, APIs, and front-end UX.</div>
         <a class="btn" href="#contact">Contact / Resume</a>
       </section>
+    <section id="what-i-bring">
+    <h2>What I bring</h2>
+    <div class="grid">
+      <article class="card">
+        <strong>Technical foundation</strong>
+        <div class="tech">C · C++ · Python · JavaScript · TypeScript · HTML · CSS · Tailwind</div>
+      </article>
 
+      <article class="card">
+        <strong>Systems &amp; algorithms</strong>
+        <div class="tech">Low-level projects, performance-minded code</div>
+      </article>
+
+      <article class="card">
+        <strong>Full-stack &amp; realtime</strong>
+        <div class="tech">SPAs · WebSockets · real-time interactions</div>
+      </article>
+
+      <article class="card">
+        <strong>DevOps &amp; deployment</strong>
+        <div class="tech">Docker · Virtual machines · Hosting · DNS / subdomain setup · SSL</div>
+      </article>
+
+      <article class="card">
+        <strong>Languages &amp; communication</strong>
+        <div class="tech">Italian, English (fluent); Spanish, French (conversational)</div>
+      </article>
+
+      <article class="card">
+        <strong>Team skills from sport</strong>
+        <div class="tech">Discipline, performing under pressure, feedback culture — Division I collegiate tennis; competing in II Bundesliga Nord</div>
+      </article>
+    </div>
+  </section>
       <section id="projects">
-        <h2>Featured Projects</h2>
+        <h2>Selected Projects</h2>
         <div class="grid">
           <article class="card">
-            <div class="project-title">Project One — Task Manager</div>
-            <div class="tech">React · Node.js · PostgreSQL · Docker</div>
-            <img class="screenshot" alt="Project One screenshot" src="projects/task-manager.png">
-            <p>One-line pitch describing problem and value. <a href="https://github.com/yourname/task-manager" style="color:var(--accent)">Code</a> · <a href="#" style="color:var(--accent)">Live</a></p>
-            <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
-              <li>Built REST API with input validation and JWT auth.</li>
-              <li>Deployed with Docker and CI; improved load time by X%.</li>
-            </ul>
-          </article>
+        <div class="project-title">Minishell</div>
+        <div class="tech">C · Unix · Processes</div>
+        <!-- <img class="screenshot" alt="Minishell screenshot" src="projects/minishell.png"> -->
+        <p>Unix-style shell implementing process control, piping, redirection, and signal handling. <a href="https://github.com/svevotti/Minishell" style="color:var(--accent)">Code</a></p>
+        <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
+          <li>Process management, forking, exec, and built-in commands.</li>
+          <li>Robust input parsing and signal-safe cleanup.</li>
+        </ul>
+      </article>
 
-          <article class="card">
-            <div class="project-title">Project Two — Scraper & ETL</div>
-            <div class="tech">Python · BeautifulSoup · Airflow · SQLite</div>
-            <img class="screenshot" alt="Project Two screenshot" src="projects/scraper.png">
-            <p>Automated data pipeline that extracts and normalizes data. <a href="https://github.com/yourname/scraper" style="color:var(--accent)">Code</a></p>
-            <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
-              <li>Modular code with unit tests and logging.</li>
-              <li>Reduced manual data prep time from hours to minutes.</li>
-            </ul>
-          </article>
+         <article class="card">
+        <div class="project-title">Webserver</div>
+        <div class="tech">C/C++ · Networking · CGI</div>
+        <!-- <img class="screenshot" alt="HTTP server screenshot" src="projects/http-server.png"> -->
+        <p>Lightweight HTTP server with CGI support demonstrating request parsing and process-based handlers. <a href="https://github.com/svevotti/webserver" style="color:var(--accent)">Code</a></p>
+        <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
+          <li>Request parsing, header handling, and child process management.</li>
+        </ul>
+      </article>
 
-          <article class="card">
-            <div class="project-title">Project Three — Mobile Demo</div>
-            <div class="tech">Flutter · Firebase</div>
-            <img class="screenshot" alt="Project Three screenshot" src="projects/mobile.png">
-            <p>Cross-platform prototype for on-the-go note-taking. <a href="https://github.com/yourname/mobile-demo" style="color:var(--accent)">Code</a></p>
-            <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
-              <li>Implemented offline sync and push notifications.</li>
-            </ul>
-          </article>
-        </div>
+      <article class="card">
+        <div class="project-title">Cub3D - Ray-Casting Game</div>
+        <div class="tech">C · Graphics · Algorithms</div>
+        <!-- <img class="screenshot" alt="Ray-casting game screenshot" src="projects/raycast.png"> -->
+        <p>A small 3D-style game using ray-casting techniques for rendering and collision. <a href="https://github.com/svevotti/cub3d" style="color:var(--accent)">Code</a></p>
+        <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
+          <li>Spatial math and performance-focused loops.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="project-title">Transcendence (SPA)</div>
+        <div class="tech">TypeScript · Tailwind · WebSockets</div>
+        <!-- <img class="screenshot" alt="Transcendence screenshot" src="projects/transcendence.png"> -->
+        <p>Real-time TypeScript single-page app with interactive features. <a href="https://github.com/42Alena/ft_transcendence-ping-pong-website" style="color:var(--accent)">Code</a> · <a href="#" style="color:var(--accent)">Live</a></p>
+        <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
+          <li>Realtime interactions and responsive UI built with Tailwind.</li>
+        </ul>
+      </article>
+      </div>
       </section>
-
-      <section id="skills">
-        <h2>Skills</h2>
-        <div style="display:flex;gap:18px;flex-wrap:wrap">
-          <div class="card" style="min-width:220px">
-            <strong>Languages</strong>
-            <div class="tech">Python · JavaScript · TypeScript · Dart</div>
-          </div>
-          <div class="card" style="min-width:220px">
-            <strong>Frameworks / Tools</strong>
-            <div class="tech">React · Next.js · Node · Docker · Git · SQL</div>
-          </div>
-        </div>
-      </section>
-
       <section id="contact">
         <h2>Contact</h2>
         <div class="card">
-          <p style="margin:0">Email: <a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></p>
-          <p style="margin:6px 0 0">GitHub: <a href="https://github.com/yourname" style="color:var(--accent)">github.com/yourname</a></p>
-          <p style="margin:6px 0 0">LinkedIn: <a href="#" style="color:var(--accent)">linkedin.com/in/yourname</a></p>
+          <p style="margin:0">Email: <a href="mailto:svevamazzari@gmail.com" style="color:var(--accent)">svevamazzari@gmail.com</a></p>
+          <p style="margin:6px 0 0">GitHub: <a href="https://github.com/svevotti" style="color:var(--accent)">github.com/svevotti</a></p>
+          <p style="margin:6px 0 0">LinkedIn: <a href="https://www.linkedin.com/in/sveva-mazzari/" style="color:var(--accent)">linkedin.com/in/sveva-mazzari/</a></p>
           <p style="margin:10px 0 0"><a href="resume.pdf" class="btn">Download Resume (PDF)</a></p>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>© Your Name — Built with HTML · CSS</div>
+      <div>© Sveva Mazzari — Built with HTML · CSS</div>
     </footer>
   </div>
 </body>
