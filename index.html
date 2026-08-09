@@ -1,152 +1,360 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sveva Mazzari — Software Engineer</title>
-  <style>
-    :root{--accent:#0ea5a4;--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;color-scheme:dark}
-    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#e6eef6;line-height:1.45}
-    .wrap{max-width:980px;margin:40px auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .name{font-size:1.4rem;font-weight:700}
-    .role{color:var(--muted);font-size:0.95rem}
-    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
-    .hero{margin:28px 0;padding:20px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px}
-    .headline{font-size:1.6rem;font-weight:700}
-    .sub{color:var(--muted);margin-top:8px}
-    .btn{display:inline-block;margin-top:12px;padding:8px 12px;border-radius:8px;background:var(--accent);color:#022; font-weight:600;text-decoration:none}
-    section{margin-top:20px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-    .card{background:var(--card);padding:14px;border-radius:10px}
-    .project-title{font-weight:700;margin-bottom:6px}
-    .tech{color:var(--muted);font-size:0.86rem;margin-bottom:8px}
-    .screenshot{width:100%;height:140px;object-fit:cover;border-radius:8px;background:#06111a}
-    footer{margin-top:28px;color:var(--muted);font-size:0.9rem}
-    @media (max-width:520px){.wrap{margin:18px;padding:16px}.headline{font-size:1.25rem}}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <div>
-        <div class="name">Sveva Mazzari</div>
-        <div class="role">Aspiring Software Engineer</div>
-      </div>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero" id="hero">
-        <div class="headline">About me</div>
-        <div class="sub">I'm a junior software developer and 42 Berlin grad with three years of hands-on, project-based training. I enjoy building reliable systems and interactive web apps, love solving technical problems with curiosity and care, and thrive working with friendly, collaborative teams.</div>
-        <div class="sub">Currently open to internships and junior software engineer roles. Strong in backend systems, APIs, and front-end UX.</div>
-        <a class="btn" href="#contact">Contact / Resume</a>
-      </section>
-    <section id="what-i-bring">
-    <h2>What I bring</h2>
-    <div class="grid">
-      <article class="card">
-        <strong>Technical foundation</strong>
-        <div class="tech">C · C++ · Python · JavaScript · TypeScript · HTML · CSS · Tailwind</div>
-      </article>
-
-      <article class="card">
-        <strong>Systems &amp; algorithms</strong>
-        <div class="tech">Low-level projects, performance-minded code</div>
-      </article>
-
-      <article class="card">
-        <strong>Full-stack &amp; realtime</strong>
-        <div class="tech">SPAs · WebSockets · real-time interactions</div>
-      </article>
-
-      <article class="card">
-        <strong>DevOps &amp; deployment</strong>
-        <div class="tech">Docker · Virtual machines · Hosting · DNS / subdomain setup · SSL</div>
-      </article>
-
-      <article class="card">
-        <strong>Languages &amp; communication</strong>
-        <div class="tech">Italian, English (fluent); Spanish, French (conversational)</div>
-      </article>
-
-      <article class="card">
-        <strong>Team skills from sport</strong>
-        <div class="tech">Discipline, performing under pressure, feedback culture — Division I collegiate tennis; competing in II Bundesliga Nord</div>
-      </article>
-    </div>
-  </section>
-      <section id="projects">
-        <h2>Selected Projects</h2>
-        <div class="grid">
-          <article class="card">
-        <div class="project-title">Minishell</div>
-        <div class="tech">C · Unix · Processes</div>
-        <!-- <img class="screenshot" alt="Minishell screenshot" src="projects/minishell.png"> -->
-        <p>Unix-style shell implementing process control, piping, redirection, and signal handling. <a href="https://github.com/svevotti/Minishell" style="color:var(--accent)">Code</a></p>
-        <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
-          <li>Process management, forking, exec, and built-in commands.</li>
-          <li>Robust input parsing and signal-safe cleanup.</li>
-        </ul>
-      </article>
-
-         <article class="card">
-        <div class="project-title">Webserver</div>
-        <div class="tech">C/C++ · Networking · CGI</div>
-        <p>Lightweight HTTP server with CGI support demonstrating request parsing and process-based handlers. <a href="https://github.com/svevotti/webserver" style="color:var(--accent)">Code</a></p>
-        <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
-          <li>Request parsing, header handling, and child process management.</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <div class="project-title">Cub3D - Ray-Casting Game</div>
-        <div class="tech">C · Graphics · Algorithms</div>
-        <p>A small 3D-style game using ray-casting techniques for rendering and collision. <a href="https://github.com/svevotti/cub3d" style="color:var(--accent)">Code</a></p>
-        <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
-          <li>Spatial math and performance-focused loops.</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <div class="project-title">Transcendence (SPA)</div>
-        <div class="tech">TypeScript · Tailwind · WebSockets</div>
-        <p>Real-time TypeScript single-page app with interactive features. <a href="https://github.com/42Alena/ft_transcendence-ping-pong-website" style="color:var(--accent)">Code</a> · <a href="#" style="color:var(--accent)">Live</a></p>
-        <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
-          <li>Real-time multiplayer pong game</li>
-          <li>Developed responsive frontend interfaces and dynamic client-side logic using TypeScript and Tailwind CSS.</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <div class="project-title">Inception</div>
-        <div class="tech">Docker · Docker Compose · Docker Secrets · Bash</div>
-        <p>Multi-service containerized infrastructure with custom images and data persistence. <a href="https://github.com/svevotti/inception" style="color:var(--accent)">Code</a></p>
-        <ul style="color:var(--muted);padding-left:18px;margin-top:8px">
-          <li>Built multi-service deployment using Docker Compose with custom images and secure credential management via Docker Secrets.</li>
-          <li>Configured persistent data storage with volumes and deployed the entire infrastructure in a virtual machine environment.</li>        </ul>
-      </article>
-
-      </div>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <div class="card">
-          <p style="margin:0">Email: <a href="mailto:svevamazzari@gmail.com" style="color:var(--accent)">svevamazzari@gmail.com</a></p>
-          <p style="margin:6px 0 0">GitHub: <a href="https://github.com/svevotti" style="color:var(--accent)">github.com/svevotti</a></p>
-          <p style="margin:6px 0 0">LinkedIn: <a href="https://www.linkedin.com/in/sveva-mazzari/" style="color:var(--accent)">linkedin.com/in/sveva-mazzari/</a></p>
-          <p style="margin:10px 0 0"><a href="resume.pdf" class="btn">Download Resume (PDF)</a></p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sveva Mazzari — Software Engineer</title>
+    <style>
+      :root {
+        --accent: #0ea5a4;
+        --bg: #0f1724;
+        --card: #0b1220;
+        --muted: #94a3b8;
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          system-ui,
+          Segoe UI,
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+        background: var(--bg);
+        color: #e6eef6;
+        line-height: 1.45;
+      }
+      .wrap {
+        max-width: 980px;
+        margin: 40px auto;
+        padding: 24px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .name {
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+      .role {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 14px;
+      }
+      .hero {
+        margin: 28px 0;
+        padding: 20px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.02),
+          transparent
+        );
+        border-radius: 12px;
+      }
+      .headline {
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+      .sub {
+        color: var(--muted);
+        margin-top: 8px;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #022;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      section {
+        margin-top: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 14px;
+      }
+      .card {
+        background: var(--card);
+        padding: 14px;
+        border-radius: 10px;
+      }
+      .project-title {
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .tech {
+        color: var(--muted);
+        font-size: 0.86rem;
+        margin-bottom: 8px;
+      }
+      .screenshot {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 8px;
+        background: #06111a;
+      }
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      @media (max-width: 520px) {
+        .wrap {
+          margin: 18px;
+          padding: 16px;
+        }
+        .headline {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <div class="name">Sveva Mazzari</div>
+          <div class="role">Aspiring Software Engineer</div>
         </div>
-      </section>
-    </main>
+        <nav>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-    <footer>
-      <div>© Sveva Mazzari — Built with HTML · CSS</div>
-    </footer>
-  </div>
-</body>
+      <main>
+        <section class="hero" id="hero">
+          <div class="headline">About me</div>
+          <div class="sub">
+            I'm a junior software developer and 42 Berlin grad with three years
+            of hands-on, project-based training. I enjoy building reliable
+            systems and interactive web apps, love solving technical problems
+            with curiosity and care, and thrive working with friendly,
+            collaborative teams.
+          </div>
+          <div class="sub">
+            Currently open to internships and junior software engineer roles.
+            Strong in backend systems, APIs, and front-end UX.
+          </div>
+          <a class="btn" href="#contact">Contact / Resume</a>
+        </section>
+        <section id="what-i-bring">
+          <h2>What I bring</h2>
+          <div class="grid">
+            <article class="card">
+              <strong>Technical foundation</strong>
+              <div class="tech">
+                C · C++ · Python · JavaScript · TypeScript · HTML · CSS ·
+                Tailwind
+              </div>
+            </article>
+
+            <article class="card">
+              <strong>Systems &amp; algorithms</strong>
+              <div class="tech">
+                Low-level projects, performance-minded code
+              </div>
+            </article>
+
+            <article class="card">
+              <strong>Full-stack &amp; realtime</strong>
+              <div class="tech">SPAs · WebSockets · real-time interactions</div>
+            </article>
+
+            <article class="card">
+              <strong>DevOps &amp; deployment</strong>
+              <div class="tech">
+                Docker · Virtual machines · Hosting · DNS / subdomain setup ·
+                SSL
+              </div>
+            </article>
+
+            <article class="card">
+              <strong>Languages &amp; communication</strong>
+              <div class="tech">
+                Italian, English (fluent); Spanish, French (conversational)
+              </div>
+            </article>
+
+            <article class="card">
+              <strong>Team skills from sport</strong>
+              <div class="tech">
+                Discipline, performing under pressure, feedback culture —
+                Division I collegiate tennis; competing in II Bundesliga Nord
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="projects">
+          <h2>Selected Projects</h2>
+          <div class="grid">
+            <article class="card">
+              <div class="project-title">Minishell</div>
+              <div class="tech">C · Unix · Processes</div>
+              <!-- <img class="screenshot" alt="Minishell screenshot" src="projects/minishell.png"> -->
+              <p>
+                Unix-style shell implementing process control, piping,
+                redirection, and signal handling.
+                <a
+                  href="https://github.com/svevotti/Minishell"
+                  style="color: var(--accent)"
+                  >Code</a
+                >
+              </p>
+              <ul
+                style="color: var(--muted); padding-left: 18px; margin-top: 8px"
+              >
+                <li>
+                  Process management, forking, exec, and built-in commands.
+                </li>
+                <li>Robust input parsing and signal-safe cleanup.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="project-title">Webserver</div>
+              <div class="tech">C/C++ · Networking · CGI</div>
+              <p>
+                Lightweight HTTP server with CGI support demonstrating request
+                parsing and process-based handlers.
+                <a
+                  href="https://github.com/svevotti/webserver"
+                  style="color: var(--accent)"
+                  >Code</a
+                >
+              </p>
+              <ul
+                style="color: var(--muted); padding-left: 18px; margin-top: 8px"
+              >
+                <li>
+                  Request parsing, header handling, and child process
+                  management.
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="project-title">Cub3D - Ray-Casting Game</div>
+              <div class="tech">C · Graphics · Algorithms</div>
+              <p>
+                A small 3D-style game using ray-casting techniques for rendering
+                and collision.
+                <a
+                  href="https://github.com/svevotti/cub3d"
+                  style="color: var(--accent)"
+                  >Code</a
+                >
+              </p>
+              <ul
+                style="color: var(--muted); padding-left: 18px; margin-top: 8px"
+              >
+                <li>Spatial math and performance-focused loops.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="project-title">Transcendence (SPA)</div>
+              <div class="tech">TypeScript · Tailwind · WebSockets</div>
+              <p>
+                Real-time TypeScript single-page app with interactive features.
+                <a
+                  href="https://github.com/42Alena/ft_transcendence-ping-pong-website"
+                  style="color: var(--accent)"
+                  >Code</a
+                >
+              </p>
+              <ul
+                style="color: var(--muted); padding-left: 18px; margin-top: 8px"
+              >
+                <li>Real-time multiplayer pong game</li>
+                <li>
+                  Developed responsive frontend interfaces and dynamic
+                  client-side logic using TypeScript and Tailwind CSS.
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="project-title">Inception</div>
+              <div class="tech">
+                Docker · Docker Compose · Docker Secrets · Bash
+              </div>
+              <p>
+                Multi-service containerized infrastructure with custom images
+                and data persistence.
+                <a
+                  href="https://github.com/svevotti/inception"
+                  style="color: var(--accent)"
+                  >Code</a
+                >
+              </p>
+              <ul
+                style="color: var(--muted); padding-left: 18px; margin-top: 8px"
+              >
+                <li>
+                  Built multi-service deployment using Docker Compose with
+                  custom images and secure credential management via Docker
+                  Secrets.
+                </li>
+                <li>
+                  Configured persistent data storage with volumes and deployed
+                  the entire infrastructure in a virtual machine environment.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <div class="card">
+            <p style="margin: 0">
+              Email:
+              <a
+                href="mailto:svevamazzari@gmail.com"
+                style="color: var(--accent)"
+                >svevamazzari@gmail.com</a
+              >
+            </p>
+            <p style="margin: 6px 0 0">
+              GitHub:
+              <a href="https://github.com/svevotti" style="color: var(--accent)"
+                >github.com/svevotti</a
+              >
+            </p>
+            <p style="margin: 6px 0 0">
+              LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/sveva-mazzari/"
+                style="color: var(--accent)"
+                >linkedin.com/in/sveva-mazzari/</a
+              >
+            </p>
+            <p style="margin: 10px 0 0">
+              <a href="resume.pdf" class="btn">Download Resume (PDF)</a>
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div>© Sveva Mazzari — Built with HTML · CSS</div>
+      </footer>
+    </div>
+  </body>
 </html>
